@@ -72,8 +72,8 @@ body {
 }
 
 .submit-b:hover {
-    background-color: rgba(78, 78, 78, 0.8) !important; /* Same color as menu items hover */
-    color: white !important; /* Keep the text color white on hover */
+    background-color: rgba(78, 78, 78, 0.8) !important; 
+    color: white !important; 
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
 }
@@ -287,8 +287,8 @@ body {
 }
 
 .beauty-button:hover {
-    background-color: rgba(78, 78, 78, 0.8); /* Same color as menu items hover */
-    color: white; /* Keep the text color white on hover */
+    background-color: rgba(78, 78, 78, 0.8);
+    color: white; 
     text-decoration: none;
     box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.5);
 }
