@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="Mohamad Moudallal"/>
+    <meta property="og:title" content="Mohamad Moudallal"/>
+    <meta property="og:description" content="My Super Cool Portfolio Website."/>
+    <meta property="og:image" content="img/showcase.png">
+
+    <!-- Favicon -->
+    <link id="favicon-link" rel="shortcut icon" type="image/x-icon" href="img/M.ico">
+
+    <title>alithedesignr</title>
+
+    <!-- Webpage styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- ZMDI CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+
+    <div id="menu-container" class="menu-container">
+        <nav class="menu-nav">
+            <h2><span class="black">Menu</span></h2>
+            <ul>
+                <li id="homeButton"><a href="#home">Home</a></li>
+                <li id="aboutButton"><a href="#about-section">About</a></li>
+                <li id="skillButton"><a href="#skills-section">Skills</a></li>
+                <li id="portfolioButton"><a href="#portfolio-section">Portfolio</a></li>
+                <li id="courseButton"><a href="#course-section">Course</a></li>
+                <li id="funButton"><a href="#fun-section">More About Me</a></li>
+                <li id="feedbackButton"><a href="#feedback-section">Feedback</a></li>
+                <li id="contactButton"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="head" id="head-bar">
+        <a class="logo m-0 p-0"><img src="img/Logo.png" width="150" class="img-fluid"></a>
+        <a id="menu" class="menu ml-0 mr-0 p-0"><img src="img/menu.png" height="23"></a>
+    </div>
+    <div id="main-container">
+
+        <!-- Cover Section -->
+        <div class="cover">
+            <div class="typed-container"><span class="typed-text"></span></div>
+            <span class="scroll-container"><a id="scroll"><i id="scroll-icon" class="zmdi zmdi-chevron-down animated infinite bounce zmdi-hc-fw"></i></a></span>
+        </div>   
+
+
+
+
+
+		<!-- About Section -->
+		<div class="about-section container py-2" id="about-section">
+			<h1 class="header mx-auto py-2 mb-0">About</h1>
+			<div class="py-3" style="clear: left;">
+				<p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
+				<p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
+				<a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1 ">Click Me</a>
+				<a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> My Resume</a>
+			</div>
+		</div>
+
+		<!-- Skills Section -->
+		<div class="skills-section container py-2" id="skills-section">
+			<h1 class="header mx-auto py-2 mb-0">Skills</h1>
+			<h3 class="pt-3 sub-header mb-0">Here are some of my main skills:</h3>
+			<div class="skills pt-5">
+				<div class="skillbar" data-percent="90%">
+					<div class="title">HTML5 & CSS3</div>
+					<div class="count-bar"><div class="count"></div></div>
+				</div>
+				<div class="skillbar" data-percent="75%">
+					<div class="title">JavaScript</div>
+					<div class="count-bar"><div class="count"></div></div>
+				</div>
+				<div class="skillbar" data-percent="80%">
+					<div class="title">UI/UX Design</div>
+					<div class="count-bar"><div class="count"></div></div>
+				</div>
+				<div class="skillbar" data-percent="70%">
+					<div class="title">Photo Editing</div>
+					<div class="count-bar"><div class="count"></div></div>
+				</div>
+				<div class="skillbar" data-percent="85%">
+					<div class="title">E-Commerce Design</div>
+					<div class="count-bar"><div class="count"></div></div>
+				</div>
+				<div class="skillbar" data-percent="75%">
+					<div class="title">3D Web Design</div>
+					<div class="count-bar"><div class="count"></div></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Portfolio Section -->
+		<div class="portfolio-section container py-2" id="portfolio-section">
+			<h1 class="header mx-auto py-2 mb-0">Portfolio</h1>
+			<h3 class="pt-3 sub-header mb-0">Main projects, side projects, Just an overview:</h3>
+			<div class="row pt-3">
+				<div class="col-md-4">
+					<a class="portfolio-link" href="#portfolioModal1" data-toggle="modal"><img src="img/mylogo.png" class="img-responsive w-100"></a>
+				</div>
+				<div class="col-md-4">
+					<a class="portfolio-link" href="#portfolioModal2" data-toggle="modal"><img src="img/givingloop.png" class="img-responsive w-100"></a>
+				</div>
+				<div class="col-md-4">
+					<a class="portfolio-link" href="#portfolioModal3" data-toggle="modal"><img src="img/twc.png" class="img-responsive w-100"></a>
+				</div>
+				<div class="col-md-4">
+					<a class="portfolio-link" href="#portfolioModal4" data-toggle="modal"><img src="img/lln.png" class="img-responsive w-100"></a>
+				</div>
+				<div class="col-md-4">
+					<a class="portfolio-link" href="#portfolioModal5" data-toggle="modal"><img src="img/proonlinestore.png" class="img-responsive w-100"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="about-section container py-2" id="about-section">
+			<h1 class="header mx-auto py-2 mb-0">Course</h1>
+			<div class="py-3" style="clear: left;">
+				<p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
+				<p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
+				<a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1 ">Click Me</a>
+				<a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> My Resume</a>
+			</div>
+		</div> -->
+		<div class="about-section container py-2" id="course-section">
+			<h1 class="header mx-auto py-2 mb-0">Course</h1>
+			<div class="py-3" style="clear: left;">
+				<p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
+				<p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
+				<a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1 ">Click Me</a>
+				<a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> My Resume</a>
+			</div>
+		</div>
+
+		<!-- Fun Section 	-->
+		<div class="fun-section container py-2" id="fun-section">
+			<h1 class="header mx-auto py-2 mb-0">More About Me</h1>
+			<h3 class="pt-3 sub-header mb-0">National Recognition, International Competitions & Web Design:</h3>
+			<div class="row pt-3">
+				<div class="col-md-4">
+					<a href="#portfolioModal6" data-toggle="modal"><img src="img/believer.jpg" class="img-responsive w-100"></a>
+				</div>
+				<div class="col-md-4">
+					<a href="#portfolioModal7" data-toggle="modal"><img src="img/perfect.jpg" class="img-responsive w-100"></a>
+				</div>
+				<div class="col-md-4">
+					<a href="#portfolioModal8" data-toggle="modal"><img src="img/cubing1.png" class="img-responsive w-100"></a>
+				</div>
+				
+			</div>
+		</div>
+
+	
+
+		<!-- Feedback Section -->
+		<div class="feedback-section container py-2" id="feedback-section">
+			<h1 class="header mx-auto py-2 mb-0">Feedback</h1>
+			<h3 class="pt-3 sub-header mb-0">Testimonials from clients:</h3>
+			<div class="row pt-3">
+				<div class="col-md-4 mb-3">
+
+					<hr class="mt-0">
+					<p>Ali is a great Front-end Developer, with beautiful designs. His work is efficient and he delivers fast.</p>
+					<h5>Hussain Wehbi</h5>
+					<h6>Co-Founder of <a href="" target="_blank">Business Compact</a></h6>
+				</div>
+				<div class="col-md-4 mb-3">
+					<hr class="mt-0">
+					<p>Ali's UI/UX redesign for our app was a game-changer for FlyE-sim. His attention to detail and expertise resulted in a seamless, visually stunning user experience. Highly recommended.</p>
+					<h5>Hussain Karout</h5>
+					<h6>Founder of <a href="https://www.instagram.com/flyesimofficial/" target="_blank">FlyE-sim</a></h6>
+				</div>
+
+				<div class="col-md-4 mb-3">
+					<hr class="mt-0">
+					<p>I've been in the e-commerce industry for over a decade, and I must say that working with alithedesignr has been a game-changer for KEALI. His expertise in web development propelled our business to new heights. His dedication, creativity, and attention to detail are unmatched. We're proud to have him as part of our journey towards success.</p>
+					<h5>Kevin Ibrahim</h5>
+					<h6>Founder of <a href="https://www.instagram.com/keali_art/">KEALI</a>  </h6>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div class="contact-section container py-2 mb-3" id="contact-section">
+			<h1 class="header mx-auto py-2 mb-0">Contact</h1>
+			<h3 class="pt-3 sub-header mb-1">Get in touch:</h3>
+			<!-- <h5 class="text-center">*Note that I'm not available to hire at the moment.</h4> -->
+			<div class="row pt-3">
+				<form action="https://formspree.io/f/xyyqbyrq" method="POST" class="mx-auto w-100">
+					<div class="control-group">
+						<div class="form-group mb-2">
+							<input type="name" name="name" class="form-control p-1" id="userName" aria-describedby="nameHelp" placeholder="Name" required data-validation-required-message="This field is required" autocomplete="off">
+							<p class="help-block mb-0"></p>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="form-group mb-2 controls">
+							<input type="email" name="email" class="form-control p-1" id="userEmail" aria-describedby="emailHelp" placeholder="Email" required data-validation-email-message="Not a valid email address" autocomplete="off">
+							<p class="help-block mb-0"></p>
+						</div>
+						
+					</div>
+					<div class="control-group">
+						<div class="form-group mb-2">
+							<input type="number" name="phone" class="form-control p-1" id="userPhone" aria-describedby="phoneHelp" placeholder="Phone Number" required data-validation-number-message="Not a valid phone number" autocomplete="off">
+							<p class="help-block mb-0"></p>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<div class="form-group mb-2 controls">
+							<textarea name="message" class="w-100 p-1" id="userMessage" rows="5" placeholder="Message" required data-validation-required-message="This field is required"></textarea>
+							<p class="help-block mb-0"></p>
+						</div>
+					</div>
+					 <button type="submit" class="btn  submit-b btn-primary d-block mx-auto px-3 py-1 mt-1"><i class="zmdi zmdi-mail-send"></i> Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer pt-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-center mb-1">
+						<h3 class="mb-2">Reach Out</h3>
+						<p class="mb-0">Currently based in Baabda, Mount Lebanon but we can meet @Starbucks Baabda </p>
+					</div>
+					<div class="col-md-4 text-center mb-1">
+						<h3 class="mb-2">Around The Web</h3>
+						<ul class="list-inline text-xs-center mb-0">
+							<li class="list-inline-item">
+								<a href="https://wa.link/09fj44" target="_blank" class="btn-social btn-outline"><i class="zmdi zmdi-whatsapp"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/alithedesignr/" target="_blank" class="btn-social btn-outline"><i class="zmdi zmdi-instagram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.behance.net/alimzayhem" target="_blank" class="btn-social btn-outline"><i class="zmdi zmdi-behance"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.linkedin.com/in/ali-mzayhem-07162a1a7/" target="_blank" class="btn-social btn-outline"><i class="zmdi zmdi-linkedin"></i></a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-md-4 text-center mb-1">
+						<h3 class="mb-2">Stay Tuned</h3>
+						<p class="mb-0">Stay tuned until my E-commerce Web Design course goes live.</p>
+					</div>
+				</div>
+				<br>
+				<div class="w-100 d-block">
+					<p class="text-center mb-0">&copy; alithedesignr - <span id="year"></span></p>
+				</div>
+				<br><br>
+			</div>
+		</div>
+
+		<!-- Modal 1 -->
+		<div class="portfolio-modal modal" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div>
+							<div class="modal-body">
+								<h2 class="mb-3">Portfolio Website</h2>
+								<img src="img/mylogo.png" class="img-responsive mb-3">
+								<p class="mb-3">Yes, it's the one you're looking at right now .</p>
+								<ul class="list-inline item-details">
+									<li class="list-inline-item mr-1">Client:
+										<strong>Me</strong>
+									</li>
+									<li class="list-inline-item mr-1">Date:
+										<strong>September 2022</strong>
+									</li>
+									<li class="list-inline-item">Service:
+										<strong>Web Design & Development</strong>
+									</li>
+								</ul>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 2 -->
+		<div class="portfolio-modal modal" id="portfolioModal2" tabindex="-2" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div>
+
+							<div class="modal-body">
+								<h2 class="mb-3">KEALI Website</h2>
+								<img src="img/21.png" class="img-responsive mb-3  ">
+								<p class="mb-3">I worked as a Shopify Web Designer for Keali to help them develop their new marketplace as part of the Keali Team. Check it out on <a href="http://keali.art" target="_blank">keali.art</a>.</p>
+								<ul class="list-inline item-details">
+									<li class="list-inline-item mr-1">Client:
+										<strong>KEALI</strong>
+									</li>
+									<li class="list-inline-item mr-1">Date:
+										<strong>Sep 2023</strong>
+									</li>
+									<li class="list-inline-item">Service:
+										<strong>Shopify Web Design & Maintenance </strong>
+									</li>
+								</ul>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 3 -->
+		<div class="portfolio-modal modal" id="portfolioModal3" tabindex="-3" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div>
+
+							<div class="modal-body">
+								<h2 class="mb-3">Taym Contracting</h2>
+								<img src="img/31.png" class="img-responsive mb-3  ">
+
+								<p class="mb-3">I designed this website for Taym Contracting based in Saudi Arabia to show case their company portfolio & services.<br> Check it out on <a href="https://www.figma.com/file/nG2i6IXw8y7nyNMuNwSBkZ/Contracting-Company?type=design&mode=design&t=aB6oDYfKfS9pTveW-1" target="_blank">Taym Contracting</a>.</p>
+								<ul class="list-inline item-details">
+									<li class="list-inline-item mr-1">Client:
+										<strong>Taym Contracting</strong>
+									</li>
+									<li class="list-inline-item mr-1">Date:
+										<strong>May 2023</strong>
+									</li>
+									<li class="list-inline-item">Service:
+										<strong> UI//UX Web Design</strong>
+									</li>
+								</ul>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- Modal 4 -->
+		<div class="portfolio-modal modal" id="portfolioModal4" tabindex="-4" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div>
+							<div class="modal-body">
+								<h2 class="mb-3">Interior Delights</h2>
+								<img src="img/41.png" class="img-responsive mb-3">
+								<p class="mb-3"> I worked as a Web Developer to help develop their website.<br> Check it out on <a href="http://interiordelights.net" target="_blank">interiordelights.net</a>.</p>
+								<ul class="list-inline item-details">
+									<li class="list-inline-item mr-1">Client:
+										<strong>Interior Delights</strong>
+									</li>
+									<li class="list-inline-item mr-1">Date:
+										<strong>August 2021</strong>
+									</li>
+									<li class="list-inline-item">Service:
+										<strong>Shopify Web Development</strong>
+									</li>
+								</ul>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 5 -->
+		<div class="portfolio-modal modal" id="portfolioModal5" tabindex="-5" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+
+				</div>
+				<div class="container">
+					<div class="row">
+						<div>
+							<div class="modal-body">
+								<h2 class="mb-3">Move Animation</h2>
+								<img src="img/51.png" class="img-responsive mb-3">
+								<p class="mb-3">I outsourced for an agency based in USA to implement this project.<br> Check it out on <a href="http://moveanimation.com" target="_blank">moveanimation.com</a></p>
+								<ul class="list-inline item-details">
+									<li class="list-inline-item mr-1">Client:
+										<strong>Move Animation Studio</strong>
+									</li>
+									<li class="list-inline-item mr-1">Date:
+										<strong>July 2022</strong>
+									</li>
+									<li class="list-inline-item">Service:
+										<strong>Webflow Design</strong>
+									</li>
+								</ul>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Modal 6 -->
+		<div class="portfolio-modal modal" id="portfolioModal6" tabindex="-6" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="w-100">
+							<div class="modal-body">
+								<h2 class="mb-3">UCMAS National Competition 2013</h2>
+								<img src="img/1.png" class="img-responsive mb-3"></img>
+								<p class="mb-3">In 2013, I was awarded the UCMAS Mental Math National Championship in Lebanon after solving 98 mental math equations in 8 minutes in the level E-A</p>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 7 -->
+		<div class="portfolio-modal modal" id="portfolioModal7" tabindex="-7" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="w-100">
+							<div class="modal-body">
+								<h2 class="mb-3">USMAS International Competition 2014</h2>
+								<img  src="img/2.png" class="img-responsive mb-3"></img>
+								<p class="mb-3">After winning the UCMAS Mental Math National Championship in Lebanon, I went on to represent my country in the International Competition held in Malaysia.</p>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 8 -->
+		<div class="portfolio-modal modal" id="portfolioModal8" tabindex="-8" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="w-100">
+							<div class="modal-body">
+								<h2 class="mb-3">My First Website Design</h2>
+								<img  src="img/3.png" class="img-responsive mb-3"></img>
+								<p class="mb-3">I probably shouldn't even mention it as it doesn't reflect the work I do today especially on a portfolio, but this is my very first website. At the time it possibly meant nothing, but now I use it to remind myself how it all started and I almost immediately remember where I'm going </p>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal 9 -->
+		<div class="portfolio-modal modal" id="portfolioModal9" tabindex="-9" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="mx-auto">
+							<div class="modal-body">
+								<h2 class="mb-3">Rock-Jazz Jam</h2>
+								<iframe width="100%" height="600" src="https://www.youtube.com/embed/A86_u-V4NiY" frameborder="0" allowfullscreen class="mb-3"></iframe>
+								<p class="mb-3">Performing a student composed Rock-Jazz jam with Chadi Ahmadieh on the keyboard while I play the guitar.</p>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 10 -->
+		<div class="portfolio-modal modal" id="portfolioModal10" tabindex="-10" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="mx-auto">
+							<div class="modal-body">
+								<h2 class="mb-3">Hotel California Cover</h2>
+								<iframe width="100%" height="600" src="https://www.youtube.com/embed/y8DDefJbiwo" frameborder="0" allowfullscreen class="mb-3"></iframe>
+								<p class="mb-3">Nostalgia Band performing a cover of the legendary Hotel California by The Eagles. Jana Bsat on the vocals, Mark Hammoud on lead guitar, myself on the rhythm guitar and Chadi Ahmadieh on the keybaord.</p>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 10 -->
+		<div class="portfolio-modal modal" id="portfolioModal11" tabindex="-11" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="mx-auto">
+							<div class="modal-body">
+								<h2 class="mb-3">Let Me Introduce My Self</h2>
+								<p class="mb-3 text-justify">
+									Hello Everyone! I'm Ali Mzayhem and I'm currently working in Baabda, Mount Lebanon where I started my personal brand <strong>@alithedesignr</strong> and for those of you who don't know; alithedesignr is an online hub where design enthusiasts gather to share, learn, and create. But let me walk you through my journey which started in 2013, the year I became the UCMAS Mental Math National Champion in Lebanon, which lead me to represent Lebanon on Malaysia's international stage. After that, the momentum kept going as in 2014 I earned the title of first runner-up in the UCMAS Mental Math National Championship.
+<br><br>
+These and many other experiences all influence my brand today as i specialize in crafting eye-catching user interfaces and turning design dreams into reality which also made me expand my horizons to the world of e-commerce, especially with Shopify, where I proudly serve as a trusted partner.
+<br><br>
+Beyond the technicalities, I'm driven by the joy of problem-solving and the thrill of perfecting the tiniest details.
+<br><br>
+Finally, my journey is far from being over, for I always have room for developing & designing and am looking forward to all the possibilities that lie ahead.
+							
+									</p>
+								<button type="button" class="close-button px-3" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- JavaScript Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Appear -->
+	<script src="js/jquery.appear.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- TypedJS -->
+	<script type="text/javascript" src="js/typed.js"></script>
+	<!-- Custom Script -->
+	<script type="text/javascript" src=js/script.js></script>
+	<!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script>
+    	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    	ga('create', 'UA-103067635-1', 'auto');
+    	ga('send', 'pageview');
+
+    </script>
+	</html>
