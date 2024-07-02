@@ -1,0 +1,63 @@
+	<!-- <header class="header">
+		<a href="#" class="logo">Logo</a>
+		<input type="checkbox" id="check"> <label for="check" class="icons">
+		<i class='bx bx-menu' id="menu-icon"></i> <i class='bx bx-x' id="close-icon"></i> </label>
+		<nav class="navbar">
+		<a href="#" style="--i:0;">Home</a> 
+		<a href="#" style="--i:1;">About</a>
+		 <a href="#" style="--i:2;">Gallery</a> 
+		 <a href="#" style="--i:3; ">Services</a>
+		  <a href="#" style="--i:4;">Contact</a>
+		 </nav>
+		</header> -->
+	
+		
+<!-- <nav>
+	<ul class="sidebar">
+	<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="#">Products</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Forum</a></li>
+	<li><a href="#">Login</a></li>
+	</ul>
+	<ul>
+	<li class="hideOneMobile"><a href="#">Coding2go</a></li>
+	 <li class="hideOneMobile"><a href="#">Blog</a></li> 
+	 <li class="hideOneMobile"><a href="#">Products</a></li> 
+	<li class="hideOneMobile"><a href="#">About</a></li>
+	 <li class="hideOneMobile"><a href="#">Forum</a></li>
+	 <li class="hideOneMobile"><a href="#">Login</a></li>
+	 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+	</ul>	
+	</nav>
+	
+<script>
+	function showSidebar() {
+	
+	const sidebar = document.querySelector('.sidebar') 
+	sidebar.style.display = 'flex'
+}
+
+function hideSidebar(){ const sidebar =
+
+document.querySelector('.sidebar')
+sidebar.style.display = 'none'
+}
+	</script> -->
+	
+		<!-- <nav class="navbar">
+			<div class="navbar-container">
+			  <div class="navbar-logo">
+				<img src="path/to/logo.png" alt="Logo" class="logo-image">
+				<span>Blockify</span>
+				<small>.Tech</small>
+			  </div>
+			  <ul class="navbar-menu">
+				<li class="navbar-item"><a href="#services">Services</a></li>
+				<li class="navbar-item"><a href="#projects">Projects</a></li>
+				<li class="navbar-item"><a href="#tools">Tools</a></li>
+				<li class="navbar-item"><a href="#contact">Contact Us</a></li>
+			  </ul>
+			</div>
+		  </nav> -->

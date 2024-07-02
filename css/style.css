@@ -38,6 +38,9 @@ body {
     animation-name: bgChanger;
     animation-duration: 30s;
     animation-iteration-count: infinite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
  /* Head style */
  .head {

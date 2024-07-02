@@ -1,0 +1,379 @@
+/* .header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   
+}
+    .header ::before{
+    background: rgba(0, 0, 0, 1);
+    backdrop-filter: blur(50px);
+    content:'';
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+#check{
+    display: none;
+}
+.icons{
+position :absolute;
+right:5%;
+    font-size: 2.8rem;
+    color:white ;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media (max-width: 992px) {
+    .header {
+    padding: 1.3rem 5%;
+    }
+    }
+    @media (max-width: 768px) {
+    .icons {
+    display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
+    } 
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+    .navbar {
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 17.7rem; 
+    background: red;
+    background: rgba(0, 0, 0, 0.1);
+    height: 0;
+    transition: .3s ease;
+    overflow: hidden;
+}
+
+
+#check:checked~.navbar { 
+    height: 17.7rem;
+}
+.navbar a {
+display: block;
+font-size: 1.1rem;
+margin: 1.5rem 0; text-align: center;
+transform: translateY(-50px);
+transition: .3s ease;
+opacity: 0;
+}
+
+#check:checked~.navbar a {
+
+transform: translateY(0);
+transition-delay: calc(.15s * var(--i));
+opacity: 1;
+}
+    } */
+  /* *{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  background: url('laptop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+} */
+.wrapper {
+  background-color: #515151;
+  width: 500px;
+  padding: 25px;
+  margin: 25px auto 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 1px solid #5d5d5d;
+}
+
+.wrapper h2 {
+  background-color: #393939;
+ 
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-align: center;
+  border: 1px dashed #393939;
+}
+
+.wrapper h4 {
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.input_group {
+  margin-bottom: 15px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+
+.input_box {
+  width: 100%;
+  margin-right: 12px;
+  position: relative;
+}
+
+.input_box:last-child {
+  margin-right: 0;
+}
+
+.input_box .name {
+  padding: 14px 10px 14px 50px;
+  width: 100%;
+  background-color: #5d5d5d;
+  border: 1px solid #5d5d5d;
+  outline: none;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.input_box .name:focus, .dob:focus {
+  box-shadow: 0 0 2px 1px #333232;
+  border: 1px solid #333232;
+}
+
+.input_box .icon {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  color: #fff;
+  background-color: #4e4e4e;
+  border-radius: 2px 0 0 2px;
+  transition: 0.3s;
+  font-size: 20px;
+  pointer-events: none;
+  border: 1px solid #5d5d5d;
+  border-right: none;
+}
+
+.name:focus+.icon {
+  background-color: #393939;
+  color: #fff;
+  border-right: 1px solid #393939;
+}
+
+.dob {
+  width: 30%;
+  padding: 14px;
+  text-align: center;
+  background-color: #5d5d5d;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #5d5d5d;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.radio {
+  display: none;
+}
+
+.input_box label {
+  width: 50%;
+  padding: 13px;
+  background-color: #5d5d5d;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  border: 1px solid #5d5d5d;
+  color: #fff;
+}
+
+.input_box label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-right: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.payment-checkout-body{
+  background-color: #171717 ;
+ margin-top: 50px;
+ margin-bottom: 60px;
+ 
+ 
+}
+
+.input_box label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.radio:checked+label {
+  background-color: #393939;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.input_box button {
+  width: 100%;
+  background-color: #393939;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-right: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.input_box button:hover {
+  cursor: pointer;
+  background-color: #171717;
+}
+.input_box .icon {
+width: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0px;
+left: 0px;
+bottom: 0px;
+color: #fff;
+background-color: #4e4e4e;
+border-radius: 2px 0 0 2px;
+transition: 0.3s;
+font-size: 20px;
+pointer-events: none;
+border: 1px solid #5d5d5d;
+border-right: none;
+
+}
+
+/* Adjusting margins for Credit Card and Which Payment icons */
+.input_box .fa-cc-visa {
+margin-right: 10px; /* Add space between icon and text */
+}
+
+.input_box .fa-cc-mastercard {
+margin-right: 10px; /* Add space between icon and text */
+}
+
+.input_box label {
+width: calc(50% - 24px); /* Adjusted width to accommodate icon */
+padding: 13px;
+background-color: #5d5d5d;
+display: inline-block;
+float: left;
+text-align: center;
+border: 1px solid #5d5d5d;
+color: #fff;
+margin-left: 10px; /* Added margin-left for space between icon and label */
+}
