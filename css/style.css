@@ -855,7 +855,7 @@ body {
 
 @keyframes colorChanger {
     0% { color: #ffffff; }
-    50% { color: #1566a0 }
+    50% { color: #29a8df }
     100% { color: #ffffff; }
 }
 
@@ -867,7 +867,7 @@ body {
 
 @keyframes borderColorChanger {
     0% { border-color: #ffffff; }
-    50% { border-color: #1E5AA8; }
+    50% { border-color: #29a8df; }
     100% { border-color: #ffffff; }
 }
 
@@ -908,4 +908,75 @@ a#skill-b1,a#skill-b2 {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+  
+  :root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: #29a8df89; /* Primary color with some transparency */
+    --c2: rgba(41, 168, 223, 0.1); /* Lighter variation of the primary color */
+  }
+  
+  .discuss-project__wrapper {
+    padding: 40px 32px;
+    background-color: #dddddd;
+    font-size: 38vw;
+    border: 0.2rem solid;  
+    box-shadow: 0 0 20px 5px rgba(41, 168, 223, 0.2); /* Adjust the values as needed */
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+  }
+  
+  .discuss-project__wrapper:nth-child(2) {
+    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+    animation: borderRadial var(--d) linear infinite forwards;
+  }
+  
+  @keyframes borderRotate {
+    to {
+      --angle: 450deg;
+    }
+  }
+  
+  @keyframes borderRadial {
+    50% {
+      --gradX: 0%;
+      --gradY: 100%;
+    }
+  }
+
+.skills-section .text-center {
+    margin-top: 1em; 
+}
+
+.skills-section .text-center a {
+    margin: 0 5px; /* spacing between buttons */
+}
+/* Ensure default color is used */
+.close .rl {
+    color: #000; /* Replace with your default color */
+}
+
+/* Change color on hover */
+.close:hover .rl {
+    color: #29A8DF; /* Change to your desired hover color */
 }

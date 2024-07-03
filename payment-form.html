@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body class="payment-checkout-body">
- 
+
     <div class="wrapper">
         <h2>Payment Form</h2>
         <form id="payment-form" action="" method="post">
             <!--Account Information Start-->
-            <h4 style="color: white;">Account</h4>
+            <h4 style="color: white;">Waiting List</h4>
             <div class="input_group">
                 <div class="input_box">
                     <input type="text" placeholder="Full Name" required class="name">
                     <i class="fa fa-user icon"></i>
                 </div>
-                <div class="input_box">
+                <!-- <div class="input_box">
                     <input type="text" placeholder="Name on Card" required class="name">
                     <i class="fa fa-user icon"></i>
-                </div>
+                </div> -->
             </div>
             <div class="input_group">
                 <div class="input_box">
@@ -46,7 +46,7 @@
             <!--Account Information End-->
 
             <!--DOB & Gender Start-->
-            <div class="input_group">
+            <!-- <div class="input_group">
                 <div class="input_box">
                     <h4 style="color: white;">Date Of Birth</h4>
                     <input type="text" placeholder="DD" required class="dob">
@@ -60,7 +60,7 @@
                     <input type="radio" name="gender" class="radio" id="b2">
                     <label for="b2" style="color: white;">Female</label>
                 </div>
-            </div>
+            </div> -->
             <!--DOB & Gender End-->
 
             <!--Payment Details Start-->
@@ -69,10 +69,11 @@
                     <h4 style="color: white;">Payment Details</h4>
                     <input type="radio" name="pay" class="radio" id="bc1" value="Credit Card" checked>
                     <label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
-                    <input type="radio" name="pay" class="radio" id="bc2" value="Lebanese Payment Gateway">
-                    <label for="bc2"><span><i class="fa fa-cc-mastercard"></i>Wish Payment </span></label>
+                    <input type="radio" name="pay" class="radio" id="bc2" value="Alternative Payment">
+                    <label for="bc2"><span><i class="fa fa-cc-mastercard"></i>Wish Payment / OMT</span></label>
                 </div>
             </div>
+
             <div id="credit-card-info" class="payment-info">
                 <div class="input_group">
                     <div class="input_box">
@@ -97,21 +98,56 @@
                     </div>
                 </div>
             </div>
-            <div id="lebanese-payment-info" class="payment-info" style="display: none;">
-                <!-- Add Lebanese Payment Gateway specific fields here -->
+
+            <div id="alternative-payment-info" class="payment-info" style="display: none;">
                 <div class="input_group">
                     <div class="input_box">
-                        <input type="text" name="lebanese_gateway_account" class="name" placeholder="Lebanese Payment Gateway Account Number" required>
-                        <i class="fa fa-credit-card icon"></i>
+                        <select id="alternative-payment-type" class="name" required>
+                            <option value="" disabled selected>Select Payment Type</option>
+                            <option value="Lebanese Payment Gateway">Wish Payment</option>
+                            <option value="OMT">OMT</option>
+                        </select>
                     </div>
                 </div>
-                <div class="input_group">
-                    <div class="input_box">
-                        <input type="text" name="lebanese_gateway_pin" class="name" placeholder="Lebanese Payment Gateway PIN" required>
-                        <i class="fa fa-key icon"></i>
+
+                <div id="wish-payment-info" style="display: none;">
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" name="lebanese_gateway_account" class="name" placeholder="Lebanese Payment Gateway Account Number" required>
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" name="lebanese_gateway_pin" class="name" placeholder="Lebanese Payment Gateway PIN" required>
+                            <i class="fa fa-key icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="omt-info" style="display: none;">
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" name="omt_name" class="name" placeholder="Full Name" required>
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="email" name="omt_email" class="name" placeholder="Email Address" required>
+                            <i class="fa fa-envelope icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="omt_phone" class="name" placeholder="Phone Number" required>
+                            <i class="fa fa-phone icon"></i>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
+
             <div class="input_box" style="margin-top: 20px;">
                 <input type="number" name="amount" placeholder="Enter Amount" required class="name">
                 <i class="fa fa-money icon" aria-hidden="true"></i>
@@ -129,67 +165,75 @@
     <script>
         document.getElementById('bc1').addEventListener('change', function () {
             document.getElementById('credit-card-info').style.display = 'block';
-            document.getElementById('lebanese-payment-info').style.display = 'none';
+            document.getElementById('alternative-payment-info').style.display = 'none';
         });
 
         document.getElementById('bc2').addEventListener('change', function () {
             document.getElementById('credit-card-info').style.display = 'none';
-            document.getElementById('lebanese-payment-info').style.display = 'block';
+            document.getElementById('alternative-payment-info').style.display = 'block';
         });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#payment-form').on('submit', function(e) {
-                e.preventDefault();
 
-                const paymentDetails = {
-                    fullName: $('input[placeholder="Full Name"]').val(),
-                    nameOnCard: $('input[placeholder="Name on Card"]').val(),
-                    email: $('input[placeholder="Email Address"]').val(),
-                    address: $('input[placeholder="Address"]').val(),
-                    city: $('input[placeholder="City"]').val(),
-                    dob: {
-                        dd: $('input[placeholder="DD"]').val(),
-                        mm: $('input[placeholder="MM"]').val(),
-                        yyyy: $('input[placeholder="YYYY"]').val()
-                    },
-                    gender: $('input[name="gender"]:checked').next('label').text(),
-                    paymentMethod: $('input[name="pay"]:checked').val(),
-                    amount: $('input[name="amount"]').val()
+        document.getElementById('alternative-payment-type').addEventListener('change', function () {
+            const selectedType = this.value;
+            if (selectedType === 'Lebanese Payment Gateway') {
+                document.getElementById('wish-payment-info').style.display = 'block';
+                document.getElementById('omt-info').style.display = 'none';
+            } else if (selectedType === 'OMT') {
+                document.getElementById('wish-payment-info').style.display = 'none';
+                document.getElementById('omt-info').style.display = 'block';
+            } else {
+                document.getElementById('wish-payment-info').style.display = 'none';
+                document.getElementById('omt-info').style.display = 'none';
+            }
+        });
+
+        document.getElementById('payment-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const paymentDetails = {
+                fullName: document.querySelector('input[placeholder="Full Name"]').value,
+                nameOnCard: document.querySelector('input[placeholder="Name on Card"]').value,
+                email: document.querySelector('input[placeholder="Email Address"]').value,
+                address: document.querySelector('input[placeholder="Address"]').value,
+                city: document.querySelector('input[placeholder="City"]').value,
+                dob: {
+                    day: document.querySelector('input[placeholder="DD"]').value,
+                    month: document.querySelector('input[placeholder="MM"]').value,
+                    year: document.querySelector('input[placeholder="YYYY"]').value,
+                },
+                gender: document.querySelector('input[name="gender"]:checked').value,
+                paymentType: document.querySelector('input[name="pay"]:checked').value,
+                amount: document.querySelector('input[name="amount"]').value,
+            };
+
+            if (paymentDetails.paymentType === 'Credit Card') {
+                paymentDetails.cardDetails = {
+                    number: document.querySelector('input[name="card_number"]').value,
+                    cvc: document.querySelector('input[name="card_cvc"]').value,
+                    expMonth: document.querySelector('input[name="exp_month"]').value,
+                    expYear: document.querySelector('input[name="exp_year"]').value,
                 };
-
-                if (paymentDetails.paymentMethod === 'Credit Card') {
-                    paymentDetails.cardNumber = $('input[name="card_number"]').val();
-                    paymentDetails.cardCvc = $('input[name="card_cvc"]').val();
-                    paymentDetails.expMonth = $('input[name="exp_month"]').val();
-                    paymentDetails.expYear = $('input[name="exp_year"]').val();
-                } else if (paymentDetails.paymentMethod === 'Lebanese Payment Gateway') {
-                    paymentDetails.lebaneseGatewayAccount = $('input[name="lebanese_gateway_account"]').val();
-                    paymentDetails.lebaneseGatewayPin = $('input[name="lebanese_gateway_pin"]').val();
+            } else if (paymentDetails.paymentType === 'Alternative Payment') {
+                const altPaymentType = document.getElementById('alternative-payment-type').value;
+                if (altPaymentType === 'Lebanese Payment Gateway') {
+                    paymentDetails.altPaymentDetails = {
+                        type: 'Lebanese Payment Gateway',
+                        accountNumber: document.querySelector('input[name="lebanese_gateway_account"]').value,
+                        pin: document.querySelector('input[name="lebanese_gateway_pin"]').value,
+                    };
+                } else if (altPaymentType === 'OMT') {
+                    paymentDetails.altPaymentDetails = {
+                        type: 'OMT',
+                        name: document.querySelector('input[name="omt_name"]').value,
+                        email: document.querySelector('input[name="omt_email"]').value,
+                        phone: document.querySelector('input[name="omt_phone"]').value,
+                    };
                 }
+            }
 
-                if (paymentDetails.paymentMethod === 'Lebanese Payment Gateway') {
-                    const apiUrl = 'https://lebanese-payment-gateway.example.com/pay';
-
-                    $.ajax({
-                        url: apiUrl,
-                        type: 'POST',
-                        data: JSON.stringify(paymentDetails),
-                        contentType: 'application/json',
-                        success: function(response) {
-                            alert('Payment successful!');
-                        },
-                        error: function(xhr, status, error) {
-                            alert('Payment failed: ' + error);
-                        }
-                    });
-                } else {
-                    alert('Credit Card payment not implemented yet.');
-                }
-            });
+            console.log(paymentDetails);
+            alert('Payment Details Submitted!');
         });
     </script>
-    
 </body>
 </html>
