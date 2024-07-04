@@ -22,18 +22,25 @@
 /* Animation for text color */
 
 /* Animation for background color */
+/* @keyframes bgChanger {
+    0%   {background-color: #a4a4a4;} 
+    50%  {background-color: #1a1a1a;} 
+    75%  {background-color: #565656;} 
+    100% {background-color: #a4a4a4;}
+} */
+
 @keyframes bgChanger {
-    0%   {background-color: #a4a4a4;} /* Lighter */
+    0%   {background-color: #333333;} /* Lighter */
     25%  {background-color: #565656;} /* Main Color */
     50%  {background-color: #1a1a1a;} /* Lighter */
     75%  {background-color: #565656;} /* Main Color */
-    100% {background-color: #a4a4a4;} /* Lighter */
+    100% {background-color: #333333;} /* Lighter */
 }
 
 /* Animation for border color */
 
 /* Body style */
-body {
+/* body {
     background-color: #1a1a1a;
     animation-name: bgChanger;
     animation-duration: 30s;
@@ -41,21 +48,29 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} */
+body {
+    background-color: #1a1a1a;
+    animation: bgChanger 30s infinite; /* Apply animation to body */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- /* Head style */
- .head {
+
+.head {
     width: 100%;
     position: fixed;
     z-index: 3;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     pointer-events: none;
-    background-color: rgba(78, 78, 78, 0.95);
+    background: rgba(255, 255, 255, 0.1);
 
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Adjust blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Glassmorphism effect shadow */
     height: 100px;
     padding-top: 5px;
 }
+
 
 
 /* Menu items hover effect */
@@ -142,13 +157,14 @@ body {
     font-size: 3.5rem;
     cursor: pointer;
 }
-
 .cover {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Glassmorphism effect for cover */
+    background-color: rgba(26, 26, 26, 0.5); /* Glassmorphism effect with color #1a1a1a */
+    animation: bgChanger 30s infinite; /* Apply animation to cover */
     backdrop-filter: blur(10px); /* Glassmorphism effect for cover */
 }
+
 
 .typed-container {
     position: absolute;
@@ -680,7 +696,18 @@ body {
     }
 
 }
-
+/* blog */
+@media (max-width: 768px) {
+    .blog-container {
+        margin-bottom: 58rem !important; 
+    }
+    .fun-section .col-md-4 {
+        margin-bottom: 11rem;
+    }
+    .card-item{
+        margin-bottom: 5rem !important;
+    }
+}
 
 
 /* Styling navigation menu */
@@ -878,6 +905,7 @@ body {
 }
 
 @media (max-width: 767px) {
+   
     .menu-container {
         width: 250px;
     }
@@ -965,18 +993,122 @@ a#skill-b1,a#skill-b2 {
   }
 
 .skills-section .text-center {
-    margin-top: 1em; 
+    margin-top: 6em; 
+    margin-bottom: 3em;
+   
+    
 }
 
 .skills-section .text-center a {
     margin: 0 5px; /* spacing between buttons */
+    display: inline-block;
 }
+@media (max-width: 767px) {
+    .skills-section .text-center a {
+        margin: 10px 0; /* add vertical spacing between buttons */
+        display: block; /* stack buttons vertically */
+        text-align: center; /* center the buttons */
+    }
+}
+
 /* Ensure default color is used */
 .close .rl {
-    color: #000; /* Replace with your default color */
+    color: #000; 
 }
 
 /* Change color on hover */
 .close:hover .rl {
     color: #29A8DF; /* Change to your desired hover color */
 }
+.blog-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item {
+    width: 300px;
+    margin: 2.1rem;
+    position: relative;
+    border-radius: 8px;
+    background: white;
+    padding-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 40px rgba(87, 84, 84, 0.328);
+}
+
+.card-item:hover {
+    transform: rotate(1deg);
+    box-shadow: 0 20px 40px rgba(16, 14, 14, 0.5);
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image1 {
+    background-image: url('./card-image.jpg');
+}
+
+.image2 {
+    background-image: url('./card-image-2.jpg');
+}
+
+.image3 {
+    background-image: url('./card-image-3.jpg');
+}
+
+.image4 {
+    background-image: url('./card-image-4.jpg');
+}
+
+.content {
+    padding: 1rem;
+}
+
+.title {
+    margin: 1rem 0;
+    color: #5d5d5d;
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+.button {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    background-color: #5d5d5d;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.button:hover {
+    color: #29a8df; 
+    text-decoration: none;
+ }
+
+ .button::after:hover {
+    color: #29a8df; 
+    text-decoration: none;
+ }
+ #menu-icon {
+    font-size: 36px;
+    color: #fff;
+
+  }

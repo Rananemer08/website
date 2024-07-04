@@ -377,3 +377,117 @@ border: 1px solid #5d5d5d;
 color: #fff;
 margin-left: 10px; /* Added margin-left for space between icon and label */
 }
+/* Adjusting margins for Credit Card and Which Payment icons */
+.input_box .fa-cc-visa {
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.input_box .fa-cc-mastercard {
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.input_box label {
+  width: calc(50% - 24px); /* Adjusted width to accommodate icon */
+  padding: 13px;
+  background-color: #5d5d5d;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  border: 1px solid #5d5d5d;
+  color: #fff;
+  margin-left: 10px; /* Added margin-left for space between icon and label */
+}
+#try{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-top: -190px;
+margin-left: 220px;
+
+}
+/* .join-them ,.group-try{
+display: flex;
+flex-direction: row;
+} */
+/* .mini{
+width: 10px !important;
+} */
+/* Adjust the width of specific input boxes within whish-payment-info */
+#whish-payment-info .input_box.mini,
+#whish-payment-info .input_group.mini {
+width: 50%; 
+}
+
+.uu{
+text-decoration: none;
+color: white;
+}
+
+.input_box button .money{
+  color: #29a8df;
+  padding-left: 3px;
+  }
+
+
+
+   .close {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    cursor: pointer;
+}
+ .close:hover {
+    opacity: .3;
+}
+ .close .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 60px;
+    background-color: #1a1a1a;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+ .close .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 60px;
+    background-color: #1a1a1a;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/* .portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+} */
+/* .portfolio-modal ol {
+    text-align: left;
+    font-size: 1.5em;
+} */
+ .close-button {
+    border: 3px solid white;
+    background-color: transparent;
+    animation-name: borderColorChanger, colorChanger;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: all .2s;
+    cursor: pointer;
+    font-family: Arcon;
+    font-size: 1.5rem;
+    padding: .6rem 1rem .6rem 1rem;
+}
+ .close-button:focus {
+    outline: 0;
+}
+.close-button:hover {
+    animation-name: bgChanger;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: white;
+    border: 3px solid transparent;
+}

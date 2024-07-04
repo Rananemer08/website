@@ -29,19 +29,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
     <div id="menu-container" class="menu-container">
         <nav class="menu-nav">
-            <h2><span class="black">Menu</span></h2>
+            <h2><span class="black" >Menu</span></h2>
             <ul>
-                <li id="homeButton"><a href="#home">Home</a></li>
+                <li id="homeButton" ><a href="#home">Home</a></li>
                 <li id="aboutButton"><a href="#about-section">About</a></li>
                 <li id="skillButton"><a href="#skills-section">Skills</a></li>
                 <li id="portfolioButton"><a href="#portfolio-section">Portfolio</a></li>
                 <li id="courseButton"><a href="#course-section">Course</a></li>
+				<li id="blogeButton"><a href="#blog-section">Blog</a></li>
                 <li id="funButton"><a href="#fun-section">More About Me</a></li>
                 <li id="feedbackButton"><a href="#feedback-section">Feedback</a></li>
                 <li id="contactButton"><a href="#contact-section">Contact</a></li>
@@ -56,10 +61,18 @@
 
     
     <div class="overlay" id="overlay"></div>
-    <div class="head" id="head-bar">
+    <!-- <div class="head" id="head-bar">
         <a class="logo m-0 p-0"><img src="img/Logo.png" width="110"style="margin-top:-3.5px !important;" class="img-fluid"></a>
         <a id="menu" class="menu ml-0 mr-0 p-0"  style="margin-top: 31px !important;"><img src="img/bbb-transformed.png" height="27"></a>
-    </div>
+    </div> -->
+	<div class="head" id="head-bar">
+		<a class="logo m-0 p-0"><img src="img/Logo.png" width="110" style="margin-top: -3.5px !important;" class="img-fluid"></a>
+		<a id="menu" class="menu ml-0 mr-0 p-0" style="margin-top: 31px !important;">
+			<i class='bx bx-menu' id="menu-icon" style='font-size: 27px;'></i> <!-- Boxicons menu icon -->
+		</a>
+	</div>
+	
+	
     <div id="main-container">
 
         <!-- Cover Section -->
@@ -175,7 +188,53 @@
 				<a href="payment-form.html" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> Get Offer</a>
 			</div>
 		</div>
-		
+
+        <div class="portfolio-section container py-2" id="blog-section" >
+			<h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Blog</h1>
+		<div class="blog-container">
+        
+			<div class="card-item">
+				<div class="image image1"></div>
+				<div class="content">
+					<h1 class="title"> How to write good code? </h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
+						error. Eos, laboriosam!</p>
+					<a href="#portfolioModal6" data-toggle="modal" class="button">Read More</a>
+				</div>
+			</div>
+	
+			<div class="card-item">
+				<div class="image image2"></div>
+				<div class="content">
+					<h1 class="title"> How to learn javascript? </h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
+						error. Eos, laboriosam!</p>
+					<a href="#portfolioModal6" data-toggle="modal" target="_blank" class="button">Read More</a>
+				</div>
+			</div>
+	
+			<div class="card-item">
+				<div class="image image3"></div>
+				<div class="content">
+					<h1 class="title"> What is Geeks Help?</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
+						error. Eos, laboriosam!</p>
+					<a href="#portfolioModal6" data-toggle="modal" class="button">Read More</a>
+				</div>
+			</div>
+		</div>
+			<!-- <div class="card-item">
+				<div class="image image4"></div>
+				<div class="content">
+					<h1 class="title"> How 3 screen works?</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
+						error. Eos, laboriosam!</p>
+					<a href="#" target="_blank" class="button">Read More</a>
+				</div>
+			</div>
+		</div> -->
+	
+		</div>
 
 		<!-- Fun Section 	-->
 		<div class="fun-section container py-2" id="fun-section">
