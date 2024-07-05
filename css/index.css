@@ -197,7 +197,50 @@ nav li:first-child{
   text-align: center;
   border: 1px dashed #393939;
 }
-
+@media (max-width: 745px) {
+  .wrapper{
+    width: 95%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper{
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    
+  }
+  .fix-width{
+    font-size: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .wrapper{
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    
+  }
+  .fix-width{
+    font-size: 12px;
+  }
+}
+@media (max-width: 1368px) {
+  .wrapper{
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom:50px;
+    
+  }
+  .fix-width{
+    font-size: 12px;
+  }
+}
 .wrapper h4 {
   padding-bottom: 5px;
   color: #fff;
