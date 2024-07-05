@@ -17,7 +17,7 @@
 
     <!-- Webpage styling -->
     <link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="css/index.css">> -->
+    <!-- <link rel="stylesheet" href="css/index.css">> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -29,212 +29,293 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <!-- Animate CSS -->
-    
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
     <div id="menu-container" class="menu-container">
         <nav class="menu-nav">
-            <h2><span class="black" >Menu</span></h2>
+            <h2><span class="black">Menu</span></h2>
             <ul>
-                <li id="homeButton" ><a href="#home">Home</a></li>
+                <li id="homeButton"><a href="#home">Home</a></li>
                 <li id="aboutButton"><a href="#about-section">About</a></li>
                 <li id="skillButton"><a href="#skills-section">Skills</a></li>
                 <li id="portfolioButton"><a href="#portfolio-section">Portfolio</a></li>
                 <li id="courseButton"><a href="#course-section">Course</a></li>
-				<li id="blogeButton"><a href="#blog-section">Blog</a></li>
+                <li id="blogButton"><a href="#blog-section">Blog</a></li>
                 <li id="funButton"><a href="#fun-section">More About Me</a></li>
                 <li id="feedbackButton"><a href="#feedback-section">Feedback</a></li>
                 <li id="contactButton"><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </div>
-    
-    
 
-	
-
-
-    
     <div class="overlay" id="overlay"></div>
-    <!-- <div class="head" id="head-bar">
-        <a class="logo m-0 p-0"><img src="img/Logo.png" width="110"style="margin-top:-3.5px !important;" class="img-fluid"></a>
-        <a id="menu" class="menu ml-0 mr-0 p-0"  style="margin-top: 31px !important;"><img src="img/bbb-transformed.png" height="27"></a>
-    </div> -->
-	<div class="head" id="head-bar">
-		<a class="logo m-0 p-0"><img src="img/Logo.png" width="110" style="margin-top: -3.5px !important;" class="img-fluid"></a>
-		<a id="menu" class="menu ml-0 mr-0 p-0" style="margin-top: 31px !important;">
-			<i class='bx bx-menu' id="menu-icon" style='font-size: 27px;'></i> <!-- Boxicons menu icon -->
-		</a>
-	</div>
-	
-	
+
+    <div class="head" id="head-bar">
+        <a class="logo m-0 p-0"><img src="img/Logo.png" width="110" style="margin-top: -3.5px !important;" class="img-fluid"></a>
+        <a id="menu" class="menu ml-0 mr-0 p-0" style="margin-top: 31px !important; ">
+            <i class='bx bx-menu' id="menu-icon" style='font-size: 30px; width: 40px;'></i> <!-- Boxicons menu icon -->
+        </a>
+    </div>
+
     <div id="main-container">
 
         <!-- Cover Section -->
         <div class="cover">
             <div class="typed-container"><span class="typed-text"></span></div>
             <span class="scroll-container"><a id="scroll"><i id="scroll-icon" class="zmdi zmdi-chevron-down animated infinite bounce zmdi-hc-fw"></i></a></span>
-        </div>   
+        </div>
 
+        <!-- About Section -->
+        <div class="about-section container py-2" id="about-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">About</h1>
+            <div class="py-3" style="clear: left;">
+                <p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
+                <p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
+                <a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1">Click Me</a>
+                <a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> My Resume</a>
+            </div>
+        </div>
 
-
-
-
-		<!-- About Section -->
-		<div class="about-section container py-2" id="about-section">
-			<h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">About</h1>
-			<div class="py-3" style="clear: left;">
-				<p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
-				<p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
-				<a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1 ">Click Me</a>
-				<a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> My Resume</a>
-			</div>
-		</div>
-<!-- Skills Section -->
-<div class="skills-section container py-2" id="skills-section">
-	<h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Skills</h1>
-	<h3 class="pt-3 sub-header mb-0">Here are some of my main skills:</h3>
-	<div class="skills pt-5">
-	  <div class="skillbar" data-percent="90%">
-		<div class="title">HTML5 & CSS3</div>
-		<div class="count-bar"><div class="count"></div></div>
-	  </div>
-	  <div class="skillbar" data-percent="75%">
-		<div class="title">JavaScript</div>
-		<div class="count-bar"><div class="count"></div></div>
-	  </div>
-	  <div class="skillbar" data-percent="80%">
-		<div class="title">UI/UX Design</div>
-		<div class="count-bar"><div class="count"></div></div>
-	  </div>
-	  <div class="skillbar" data-percent="70%">
-		<div class="title">Photo Editing</div>
-		<div class="count-bar"><div class="count"></div></div>
-	  </div>
-	  <div class="skillbar" data-percent="85%">
-		<div class="title">E-Commerce Design</div>
-		<div class="count-bar"><div class="count"></div></div>
-	  </div>
-	  <div class="skillbar" data-percent="75%">
-		<div class="title">3D Web Design</div>
-		<div class="count-bar"><div class="count"></div></div>
-	  </div>
-	</div>
-	<div class="skill-container"></div>
-	<!-- <a href="#portfolio-section" id="skill-b1" class="d-inline-block beauty-button px-3 py-1">Continue Scrolling</a>
-	<a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" id="skill-b2" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> View Packages</a> -->
-	<div class="text-center">
-        <a href="#portfolio-section" id="skill-b1" class="d-inline-block beauty-button px-3 py-1">Continue Scrolling</a>
-        <a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" id="skill-b2" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> View Packages</a>
-    </div>
-</div>
-  
-  <!-- Portfolio Section -->
-  <div class="portfolio-section container py-2" id="portfolio-section">
-	<h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Portfolio</h1>
-	<h3 class="pt-3 sub-header mb-0">Main projects, side projects, Just an overview:</h3>
-	<div class="row pt-3">
-	  <div class="col-md-4">
-		<a class="portfolio-link" href="#portfolioModal1" data-toggle="modal"><img src="img/mylogo.png" class="img-responsive w-100"></a>
-	  </div>
-	  <div class="col-md-4">
-		<a class="portfolio-link" href="#portfolioModal2" data-toggle="modal"><img src="img/givingloop.png" class="img-responsive w-100"></a>
-	  </div>
-	  <div class="col-md-4">
-		<a class="portfolio-link" href="#portfolioModal3" data-toggle="modal"><img src="img/twc.png" class="img-responsive w-100"></a>
-	  </div>
-	  <div class="col-md-4">
-		<a class="portfolio-link" href="#portfolioModal4" data-toggle="modal"><img src="img/lln.png" class="img-responsive w-100"></a>
-	  </div>
-	  <div class="col-md-4">
-		<a class="portfolio-link" href="#portfolioModal5" data-toggle="modal"><img src="img/proonlinestore.png" class="img-responsive w-100"></a>
-	  </div>
-	  <div class="col-md-4">
-		<a class="portfolio-link" href="#portfolioModal5" data-toggle="modal"><img src="img/proonlinestore.png" class="img-responsive w-100"></a>
-	  </div>
-	</div>
-  </div>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-	document.getElementById('skill-b1').addEventListener('click', function(event) {
-	  event.preventDefault();
-	  document.getElementById('portfolio-section').scrollIntoView({ behavior: 'smooth' });
-	});
-  });
-  </script>
-  
-
-		<!-- <div class="about-section container py-2" id="about-section">
-			<h1 class="header mx-auto py-2 mb-0">Course</h1>
-			<div class="py-3" style="clear: left;">
-				<p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
-				<p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
-				<a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1 ">Click Me</a>
-				<a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> My Resume</a>
-			</div>
-		</div> -->
-		<div class="about-section container py-2" id="course-section">
-			<h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Course</h1>
-			<div class="py-3" style="clear: left;">
-				<p class="img-container" style="float: left;"><img src="img/me.png" class="avatar img-responsive"></p>
-				<p class="about-text">I guess you already know my name. I'm a UI/UX Designer and a Front-End Engineer, I design websites, apps & more, I also solve mental math problems very fast. I started designing when I was 17 and coding when I was 18. Currently Based in Baabda, Mount Lebanon. Wanna read my full story? Click the button below.</p>
-				<a href="#portfolioModal11" data-toggle="modal" class="d-inline-block beauty-button px-3 py-1">Read More</a>
-				<a href="payment-form.html" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> Get Offer</a>
-			</div>
-		</div>
-
-        <div class="portfolio-section container py-2" id="blog-section" >
-			<h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Blog</h1>
-		<div class="blog-container">
+        <!-- Skills Section -->
+        <div class="skills-section container py-2" id="skills-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Skills</h1>
+            <h3 class="pt-3 sub-header mb-0">Here are some of my main skills:</h3>
+            <div class="skills pt-5">
+                <div class="skillbar" data-percent="90%">
+                    <div class="title">HTML5 & CSS3</div>
+                    <div class="count-bar"><div class="count"></div></div>
+                </div>
+                <div class="skillbar" data-percent="75%">
+                    <div class="title">JavaScript</div>
+                    <div class="count-bar"><div class="count"></div></div>
+                </div>
+                <div class="skillbar" data-percent="80%">
+                    <div class="title">UI/UX Design</div>
+                    <div class="count-bar"><div class="count"></div></div>
+                </div>
+                <div class="skillbar" data-percent="70%">
+                    <div class="title">Photo Editing</div>
+                    <div class="count-bar"><div class="count"></div></div>
+                </div>
+                <div class="skillbar" data-percent="85%">
+                    <div class="title">E-Commerce Design</div>
+                    <div class="count-bar"><div class="count"></div></div>
+                </div>
+                <div class="skillbar" data-percent="75%">
+                    <div class="title">3D Web Design</div>
+                    <div class="count-bar"><div class="count"></div></div>
+                </div>
+            </div>
+            <div class="skill-container"></div>
+            <div class="text-center">
+                <a href="#portfolio-section" id="skill-b1" class="d-inline-block beauty-button px-3 py-1">Continue Scrolling</a>
+                <a href="https://drive.google.com/file/d/17HKL_V4KCWqjT2cW5tktumVAigJ0D9za/view?usp=sharing" id="skill-b2" target="_blank" class="d-inline-block beauty-button px-3 py-1"><i class="zmdi zmdi-download"></i> View Packages</a>
+            </div>
+        </div>
         
-			<div class="card-item">
-				<div class="image image1"></div>
-				<div class="content">
-					<h1 class="title"> How to write good code? </h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
-						error. Eos, laboriosam!</p>
-					<a href="#portfolioModal6" data-toggle="modal" class="button">Read More</a>
-				</div>
-			</div>
-	
-			<div class="card-item">
-				<div class="image image2"></div>
-				<div class="content">
-					<h1 class="title"> How to learn javascript? </h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
-						error. Eos, laboriosam!</p>
-					<a href="#portfolioModal6" data-toggle="modal" target="_blank" class="button">Read More</a>
-				</div>
-			</div>
-	
-			<div class="card-item">
-				<div class="image image3"></div>
-				<div class="content">
-					<h1 class="title"> What is Geeks Help?</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
-						error. Eos, laboriosam!</p>
-					<a href="#portfolioModal6" data-toggle="modal" class="button">Read More</a>
-				</div>
-			</div>
-		</div>
-			<!-- <div class="card-item">
-				<div class="image image4"></div>
-				<div class="content">
-					<h1 class="title"> How 3 screen works?</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error hic doloremque. Cum sint id
-						error. Eos, laboriosam!</p>
-					<a href="#" target="_blank" class="button">Read More</a>
-				</div>
-			</div>
-		</div> -->
-	
-		</div>
+        <!-- Portfolio Section -->
+        <div class="portfolio-section container py-2" id="portfolio-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Portfolio</h1>
+            <h3 class="pt-3 sub-header mb-0">Main projects, side projects, Just an overview:</h3>
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal"><img src="img/mylogo.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal"><img src="img/givingloop.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal"><img src="img/twc.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal"><img src="img/lln.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal"><img src="img/portfolio.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal"><img src="img/emv.png" class="img-responsive w-100"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Section -->
+        <div class="course-section container py-2" id="course-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Course</h1>
+            <h3 class="pt-3 sub-header mb-0">Here are some of my Courses:</h3>
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#courseModal1" data-toggle="modal"><img src="img/course1.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#courseModal2" data-toggle="modal"><img src="img/course2.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#courseModal3" data-toggle="modal"><img src="img/course3.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#courseModal4" data-toggle="modal"><img src="img/course4.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#courseModal5" data-toggle="modal"><img src="img/course5.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#courseModal6" data-toggle="modal"><img src="img/course6.png" class="img-responsive w-100"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Section -->
+        <div class="blog-section container py-2" id="blog-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Blog</h1>
+            <h3 class="pt-3 sub-header mb-0">Read about my thoughts, plans and much more:</h3>
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#blogModal1" data-toggle="modal"><img src="img/blog1.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#blogModal2" data-toggle="modal"><img src="img/blog2.png" class="img-responsive w-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-link" href="#blogModal3" data-toggle="modal"><img src="img/blog3.png" class="img-responsive w-100"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fun Section -->
+        <div class="fun-section container py-2" id="fun-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">More About Me</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#funModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-eye fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/fun1.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>First</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#funModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-eye fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/fun2.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Second</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#funModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-eye fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/fun3.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Third</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Section -->
+        <div class="feedback-section container py-2" id="feedback-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Feedback</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/feedback1.png" alt="">
+                        <h5>Sarah S.</h5>
+                        <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam minus odit modi! Tempore magni, obcaecati ipsa."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/feedback2.png" alt="">
+                        <h5>John W.</h5>
+                        <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam minus odit modi! Tempore magni, obcaecati ipsa."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/feedback3.png" alt="">
+                        <h5>Alex D.</h5>
+                        <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam minus odit modi! Tempore magni, obcaecati ipsa."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section container py-2" id="contact-section">
+            <h1 class="header mx-auto py-2 mb-0 discuss-project__wrapper">Contact</h1>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-item mx-auto">
+                        <i class="zmdi zmdi-phone mb-3"></i>
+                        <h5>Phone</h5>
+                        <p class="font-weight-light mb-0">+961 76 123 456</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-item mx-auto">
+                        <i class="zmdi zmdi-email mb-3"></i>
+                        <h5>Email</h5>
+                        <p class="font-weight-light mb-0">info@example.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-item mx-auto">
+                        <i class="zmdi zmdi-pin mb-3"></i>
+                        <h5>Location</h5>
+                        <p class="font-weight-light mb-0">Baabda, Mount Lebanon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmM65u3n/5l18MC07Jp27U6i8f4jpSDUJ+zYUovJRn5Z3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBX2IdnZzlPTxF8sNlqGcTYDe8vJqD" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkE7M6+Bjm4VRjK8k2R4N2tD5cjlA5ogHe+M7FJp4/6UKp+0M2R4m4P4p3c" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-iQ9x2cFwoFTZ9Eu4jd5osUE5wb56kXB90xZX6r1kt27z3mLa7c5n6W7gUl46IMa" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for anchor links
+            $('a[href*="#"]').on('click', function(e) {
+                e.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
 
 		<!-- Fun Section 	-->
 		<div class="fun-section container py-2" id="fun-section">

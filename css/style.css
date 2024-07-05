@@ -527,6 +527,8 @@ body {
 }
 .footer p {
     font-size: 1.2rem;
+    color: white;
+
 }
 .footer .list-inline {
     margin-top: 2rem;
@@ -699,7 +701,7 @@ body {
 /* blog */
 @media (max-width: 768px) {
     .blog-container {
-        margin-bottom: 58rem !important; 
+        margin-bottom: 50rem !important; 
     }
     .fun-section .col-md-4 {
         margin-bottom: 11rem;
@@ -817,7 +819,20 @@ body {
     font-family: 'Arcon', sans-serif;
     transition: right 0.3s ease;
 }
-
+/* 
+.menu-container h2 {
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 5px solid #ffffff; 
+    color: #ffffff; 
+    font-size: 3rem;
+    font-weight: 500;
+}  */
 .menu-container h2 {
     margin-top: 50px;
     margin-right: 20px;
@@ -828,6 +843,8 @@ body {
     text-transform: uppercase;
     border: 5px solid #ffffff; /* Light border */
     color: #ffffff; /* Light text */
+    backdrop-filter: blur(300px); /* Blur effect */
+    -webkit-backdrop-filter: blur(90px); /* Blur effect for Safari */
     font-size: 3rem;
     font-weight: 500;
 }
@@ -1027,6 +1044,7 @@ a#skill-b1,a#skill-b2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: -4.3rem;
 }
 
 .card-item {
